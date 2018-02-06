@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
   declarations: [
    // AppComponent,
     EmployeeComponent
+    
   ],
   imports: [
     BrowserModule,
