@@ -1,6 +1,6 @@
 <div class="container">
   <h3 align="center">Employee Form</h3>
-  <form #form="ngForm">
+  <form #form="ngForm" action="list.html">
     <div class="form-group">
       <label>First Name:</label>
       <input type="text" class="form-control" name="firstname" [(ngModel)]="model.firstname">
@@ -58,7 +58,7 @@
     {{lang}}
    </div>
    </div><br>
-     <button class="btn btn-primary" type="submit" (click)="OnSubmit(model)">Submit</button>
+     <button class="btn btn-primary" type="submit" (click)="OnSubmit(model)" [routerLink]="['/list']">Submit</button>
      </form>
      Model: {{ model | json }}
 <br>
